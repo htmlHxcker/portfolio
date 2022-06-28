@@ -1,0 +1,11 @@
+.logo-text {
+  margin: 0.2rem;
+  margin-left: 2.4rem;
+}
+
+.container {
+  position: absolute;
+  inset: 2.4rem;
+  place-items: center;
+  padding: 2rem;
+}

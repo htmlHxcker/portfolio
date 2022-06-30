@@ -29,3 +29,18 @@
   column-count: 2;
   margin-top: 2rem;
 }
+.projects-callout {
+  max-width: 50%;
+}
+.project-cards {
+  position: relative;
+}
+.project-card {
+  position: absolute;
+  inset: -9rem -27rem 0 7rem;
+  background-color: hsl(var(--clr-egg-shell));
+  border: solid 1px hsl(0, 0%, 50%);
+  text-align: right;
+  padding: 10rem 2rem 2rem 2rem;
+  height: 27rem;
+}

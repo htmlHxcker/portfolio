@@ -44,3 +44,15 @@
   padding: 10rem 2rem 2rem 2rem;
   height: 27rem;
 }
+
+.project-card-one {
+  z-index: 3;
+}
+.project-card-two {
+  transform: rotate(349deg);
+  z-index: 2;
+}
+.project-card-three {
+  transform: rotate(8deg);
+  z-index: 1;
+}

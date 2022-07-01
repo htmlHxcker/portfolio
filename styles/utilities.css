@@ -30,6 +30,9 @@
   display: flex;
   gap: var(--gap, 1rem);
 }
+.flex-direction {
+  flex-direction: column;
+}
 .center {
   place-items: center;
 }
@@ -92,4 +95,9 @@
 }
 .text-right {
   text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .flex-direction {
+    flex-direction: row;
+  }
 }

@@ -1,0 +1,20 @@
+.logo-text {
+  margin: 0.2rem;
+  margin-left: 2.4rem;
+}
+
+.container {
+  position: absolute;
+  inset: 2.4rem;
+  overflow-y: scroll;
+}
+.section-wrapper {
+  place-items: center;
+  min-height: 100%;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 50%;
+  margin-left: 3rem;
+}

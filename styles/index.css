@@ -9,12 +9,23 @@
   overflow-y: scroll;
 }
 .section-wrapper {
-  place-items: center;
   min-height: 100%;
   padding: 2rem;
+}
+.section-title {
+  margin-bottom: 2rem;
 }
 
 .hero-text {
   max-width: 50%;
   margin-left: 3rem;
+}
+.accent-line {
+  border-bottom: 0.2rem solid hsl(var(--clr-deep-sapphire));
+  width: 7rem;
+}
+
+.about-column {
+  column-count: 2;
+  margin-top: 2rem;
 }

@@ -4,14 +4,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   devServer: {
-    static: path.resolve(__dirname, './build'),
+    static: path.resolve(__dirname, './'),
     historyApiFallback: true,
   },
-  entry: path.resolve(__dirname, './src/js/index.js'),
-  mode: 'development',
+  entry: path.resolve(__dirname, './js/index.js'),
   output: {
-    path: `${__dirname}/build`,
     filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'build'),
   },
   module: {
     rules: [
@@ -19,14 +18,16 @@ module.exports = {
         test: /\.js$/,
         exclude: [/node_modules/],
         resolve: {
-          extensions: ['.js', '.jsx'],
+          extensions: ['.js'],
         },
-        use: {
-          loader: ['babel-loader'],
-          options: {
-            presets: ['@babel/preset-env'],
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+            },
           },
-        },
+        ],
       },
       {
         test: /\.html$/,
@@ -41,8 +42,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
-      chunks: ['index'],
+      template: './index.html',
+      chunks: ['main'],
     }),
     new CleanWebpackPlugin(),
   ],

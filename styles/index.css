@@ -16,7 +16,7 @@
   margin-bottom: 2rem;
 }
 
-.hero-text {
+.right-container {
   max-width: 50%;
   margin-left: 3rem;
 }
@@ -28,4 +28,44 @@
 .about-column {
   column-count: 2;
   margin-top: 2rem;
+}
+.projects-callout {
+  max-width: 50%;
+}
+.project-wrappers {
+  position: relative;
+}
+.project-card {
+  position: relative;
+  top: 1rem;
+  right: 11rem;
+  width: 20rem;
+  background-color: hsl(var(--clr-egg-shell));
+  border: solid 1px hsl(0, 0%, 50%);
+  text-align: center;
+  padding: 2rem;
+  height: 27rem;
+}
+
+.project-card-one {
+  z-index: 3;
+}
+.project-card-two {
+  transform: rotate(349deg);
+  z-index: 2;
+}
+.project-card-three {
+  transform: rotate(8deg);
+  z-index: 1;
+}
+
+.skill-card {
+  padding: 2rem;
+  background: hsl(var(--clr-egg-shell));
+  text-align: center;
+  flex: 1 0 auto;
+}
+
+.contact-section {
+  width: 100%;
 }

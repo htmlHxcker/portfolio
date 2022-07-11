@@ -12,6 +12,7 @@
   --clr-old-lace: 42, 93%, 95%;
   --clr-oyster-pink: 20, 68%, 85%;
   --clr-deep-sapphire: 224, 63%, 25%;
+  --clr-egg-shell: 41, 84%, 93%;
 
   /* font sizes */
   --fs-400: 1.125rem;
@@ -28,6 +29,15 @@
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
+}
+.flex-direction {
+  flex-direction: column;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.center {
+  place-items: center;
 }
 .grid {
   display: grid;
@@ -88,4 +98,9 @@
 }
 .text-right {
   text-align: right;
+}
+@media only screen and (min-width: 768px) {
+  .flex-direction {
+    flex-direction: row;
+  }
 }

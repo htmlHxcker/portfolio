@@ -33,6 +33,9 @@
 .flex-direction {
   flex-direction: column;
 }
+.wrap {
+  flex-wrap: wrap;
+}
 .center {
   place-items: center;
 }

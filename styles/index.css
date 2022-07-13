@@ -29,36 +29,16 @@
   column-count: 2;
   margin-top: 2rem;
 }
-.projects-callout {
-  max-width: 50%;
+.project {
+  margin: 0 0 5rem 40%;
 }
-.project-wrappers {
-  position: relative;
+.project-flipped {
+  margin: 0 40% 5rem 0;
 }
-.project-card {
-  position: relative;
-  top: 1rem;
-  right: 11rem;
-  width: 20rem;
-  background-color: hsl(var(--clr-egg-shell));
-  border: solid 1px hsl(0, 0%, 50%);
-  text-align: center;
-  padding: 2rem;
-  height: 27rem;
+.project-img {
+  width: 767px;
+  margin-bottom: 3rem;
 }
-
-.project-card-one {
-  z-index: 3;
-}
-.project-card-two {
-  transform: rotate(349deg);
-  z-index: 2;
-}
-.project-card-three {
-  transform: rotate(8deg);
-  z-index: 1;
-}
-
 .skill-card {
   padding: 2rem;
   background: hsl(var(--clr-egg-shell));
@@ -69,3 +49,5 @@
 .contact-section {
   width: 100%;
 }
+
+/*todo responsiveness 780px breakpoint*/

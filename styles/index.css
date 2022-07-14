@@ -5,7 +5,6 @@
 
 .container {
   position: absolute;
-  inset: 2.4rem;
   overflow-y: scroll;
 }
 .section-wrapper {
@@ -17,8 +16,7 @@
 }
 
 .right-container {
-  max-width: 50%;
-  margin-left: 3rem;
+  margin-top: 3rem;
 }
 .accent-line {
   border-bottom: 0.2rem solid hsl(var(--clr-deep-sapphire));
@@ -30,10 +28,10 @@
   margin-top: 2rem;
 }
 .project {
-  margin: 0 0 5rem 40%;
+  margin: 0 0 5rem 20%;
 }
 .project-flipped {
-  margin: 0 40% 5rem 0;
+  margin: 0 10% 5rem 0;
 }
 .project-img {
   width: 767px;
@@ -51,3 +49,18 @@
 }
 
 /*todo responsiveness 780px breakpoint*/
+@media only screen and (min-width: 768px) {
+  .container {
+    inset: 2.4rem;
+  }
+  .right-container {
+    max-width: 50%;
+    margin-left: 3rem;
+  }
+  .project {
+    margin-left: 40%;
+  }
+  .project-flipped {
+    margin-right: 40%;
+  }
+}

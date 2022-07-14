@@ -80,4 +80,11 @@
   .skill-card {
     padding: 2rem;
   }
+  /* Custom scrollbars */
+  .container::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  .container::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--clr-deep-sapphire));
+  }
 }

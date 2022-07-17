@@ -58,6 +58,7 @@
   .right-container {
     max-width: 50%;
     margin-left: 3rem;
+    margin-top: 0;
   }
   .about-column {
     column-count: 2;

@@ -26,22 +26,11 @@
 .about-column {
   margin-top: 2rem;
 }
-.project {
-  margin: 0 0 3rem 20%;
-}
-.project-flipped {
-  margin: 0 10% 3rem 0;
-}
-.project-img {
-  width: 767px;
-  margin-bottom: 1rem;
-}
-.project-summary {
-  display: none;
+.project-card {
+  border: solid 1px hsl(var(--clr-deep-sapphire));
 }
 .skill-card {
   padding: 1rem;
-  background: hsl(var(--clr-egg-shell));
   text-align: center;
   flex: 1 0 auto;
 }
@@ -63,20 +52,6 @@
   .about-column {
     column-count: 2;
     margin-top: 2rem;
-  }
-  .project {
-    margin-left: 40%;
-    margin-bottom: 5rem;
-  }
-  .project-flipped {
-    margin-right: 40%;
-    margin-bottom: 5rem;
-  }
-  .project-img {
-    margin-bottom: 3rem;
-  }
-  .project-summary {
-    display: block;
   }
   .skill-card {
     padding: 2rem;

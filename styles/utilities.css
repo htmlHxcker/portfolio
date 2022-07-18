@@ -70,6 +70,9 @@
 .bg-old-lace {
   background-color: hsl(var(--clr-old-lace));
 }
+.bg-eggshell {
+  background-color: hsl(var(--clr-egg-shell));
+}
 
 /* Typography */
 .text-deep-sapphire {

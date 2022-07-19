@@ -28,6 +28,12 @@
 }
 .project-card {
   border: solid 1px hsl(var(--clr-deep-sapphire));
+  padding: 2rem;
+}
+
+.project-title {
+  display: block;
+  margin-top: 1rem;
 }
 .skill-card {
   padding: 1rem;

@@ -1,0 +1,11 @@
+header {
+  background-color: hsl(230, 33%, 21%);
+  margin-bottom: 8rem;
+}
+.project-overview {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+  top: 4rem;
+  padding: 2rem;
+}

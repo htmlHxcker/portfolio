@@ -45,11 +45,7 @@ module.exports = {
       template: './index.html',
       chunks: ['main'],
     }),
-    new HtmlWebpackPlugin({
-      filename: 'restry.html',
-      template: './restry.html',
-      chunks: ['main'],
-    }),
+
     new CleanWebpackPlugin(),
   ],
 };

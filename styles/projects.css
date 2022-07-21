@@ -11,5 +11,20 @@ header {
 }
 
 .project-section-wrapper {
+  align-items: center;
   padding: 2rem;
+}
+
+.callout {
+  width: 20rem;
+  padding: 2rem;
+}
+
+.callout-line {
+  width: 80%;
+  border-bottom: solid 1px hsl(var(--clr-deep-sapphire));
+}
+
+.tech-used {
+  margin-top: 3rem;
 }

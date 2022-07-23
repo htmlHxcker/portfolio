@@ -55,6 +55,11 @@ module.exports = {
       template: './prepcards.html',
       chunks: ['main'],
     }),
+    new HtmlWebpackPlugin({
+      filename: 'betterupwork.html',
+      template: './betterupwork.html',
+      chunks: ['main'],
+    }),
     new CleanWebpackPlugin(),
   ],
 };

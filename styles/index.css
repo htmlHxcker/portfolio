@@ -1,6 +1,8 @@
 .logo-text {
+  display: block;
   margin: 0.2rem;
   margin-left: 2.4rem;
+  text-decoration: none;
 }
 
 .container {

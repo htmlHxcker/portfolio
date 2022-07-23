@@ -28,3 +28,7 @@ header {
 .tech-used {
   margin-top: 3rem;
 }
+
+.gallery {
+  flex-direction: column;
+}

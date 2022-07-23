@@ -50,6 +50,16 @@ module.exports = {
       template: './restry.html',
       chunks: ['main'],
     }),
+    new HtmlWebpackPlugin({
+      filename: 'prepcards.html',
+      template: './prepcards.html',
+      chunks: ['main'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'betterupwork.html',
+      template: './betterupwork.html',
+      chunks: ['main'],
+    }),
     new CleanWebpackPlugin(),
   ],
 };

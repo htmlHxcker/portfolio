@@ -1,0 +1,50 @@
+header {
+  background-color: hsl(230, 33%, 21%);
+  margin-bottom: 8rem;
+}
+.project-overview {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+  top: 4rem;
+  padding: 2rem;
+}
+
+.project-section-wrapper {
+  align-items: center;
+  padding: 2rem;
+}
+
+.callout {
+  width: 20rem;
+  padding: 2rem;
+}
+
+.callout-line {
+  width: 80%;
+  border-bottom: solid 1px hsl(var(--clr-deep-sapphire));
+}
+
+.tech-used {
+  margin-top: 3rem;
+}
+
+.gallery {
+  flex-direction: column;
+}
+.footer-project-link {
+  font-size: var(--fs-500);
+}
+@media only screen and (min-width: 786px) {
+  .footer-project-link {
+    font-size: var(--fs-600);
+  }
+}
+@media only screen and (max-width: 1096px) {
+  .project-section-wrapper {
+    flex-direction: column;
+  }
+  .project-section-wrapper:last-child {
+    flex-direction: row;
+  }
+}

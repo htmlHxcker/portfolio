@@ -34,8 +34,14 @@
 }
 
 .project-title {
-  display: block;
   margin-top: 1rem;
+}
+.project-row {
+  margin: 2rem 0;
+}
+.project-summary {
+  margin-top: 1rem;
+  max-width: 50%;
 }
 .skill-card {
   padding: 1rem;

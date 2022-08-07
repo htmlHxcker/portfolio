@@ -56,10 +56,11 @@ module.exports = {
       chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
-      filename: 'betterupwork.html',
-      template: './betterupwork.html',
+      filename: 'bibliohut.html',
+      template: './bibliohut.html',
       chunks: ['main'],
     }),
+
     new CleanWebpackPlugin(),
   ],
 };

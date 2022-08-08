@@ -24,13 +24,15 @@
     <link rel="manifest" href="/site.webmanifest" />
     <script src="./js/index.js" defer></script>
 
-    <title>PrepCards — Clinton's Portfolio</title>
+    <title>Prepcards — Clinton's Portfolio</title>
   </head>
   <body>
     <a href="./" class="logo-text fs-500 text-deep-sapphire">CLINTON</a>
     <main class="container bg-oyster-pink">
       <header>
-        <div class="flex center justify-between bg-eggshell project-overview">
+        <div
+          class="flex center justify-between bg-eggshell project-overview flex-direction"
+        >
           <h2>PrepCards</h2>
           <nav>
             <a
@@ -49,49 +51,69 @@
         </div>
       </header>
       <section class="project-section-wrapper">
-        <img
-          src="./assets/prepcards/prepcard-home.png"
-          alt="PrepCards on a new tab"
-        />
+        <p class="text-column fs-400">
+          I recently began learning Japanese (子にちわ!) and people kept
+          recommending the use of a flashcard application to help with
+          practicing but most weren't free, the ones that were free were very
+          frustrating to use and so I decided I'd just build one for myself.
+          This was the first project I built after learning React and it helped
+          me understand its core principles. From reusable components to
+          managing state across multiple components effectively.
+        </p>
       </section>
-      <section class="bg-eggshell flex justify-between project-section-wrapper">
+      <section class="project-section-wrapper">
+        <img src="./assets/prepcards/newtab-page.svg" alt="Project home page" />
+      </section>
+      <section
+        class="bg-eggshell flex flex-direction justify-between project-section-wrapper"
+      >
         <div>
-          <h2>The what?</h2>
+          <h2>Why did I build this</h2>
           <aside class="callout bg-oyster-pink">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            blanditiis harum consequatur deserunt ut ea est soluta earum alias
-            veniam sequi corporis atque aliquid repellendus tenetur praesentium
-            saepe ullam vel.
+            This was the first project I ever built with React and it was a huge
+            shift in terms of mindset compared to vanilla JS and any other
+            library I had ever tried. I was basically lost in the React jungle
+            and this helped me make sense of a lot of things. I experienced
+            props drilling first hand and found a solution to it, I also went
+            under the hood by using just webpack instead of create-react-app.
           </aside>
         </div>
-        <div class="callout-line"></div>
         <img
-          src="./assets/restry/cropped-restry.png"
-          alt="Homepage of Restry"
+          src="./assets/prepcards/new-card-highlight.svg"
+          alt="Add new flashcard"
         />
       </section>
-      <section class="flex justify-between project-section-wrapper">
+      <section
+        class="flex flex-direction justify-between project-section-wrapper"
+      >
         <img
-          src="./assets/restry/mobile-restry.png"
-          alt="Homepage of Restry on a mobile device"
+          src="./assets/restry/mobile-restry.svg"
+          alt="Homepage of Restry on Mobile"
         />
-        <div class="callout-line"></div>
         <div>
-          <h2>The how?</h2>
+          <h2>Why I chose this tech stack</h2>
           <aside class="callout bg-eggshell">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            blanditiis harum consequatur deserunt ut ea est soluta earum alias
-            veniam sequi corporis atque aliquid repellendus tenetur praesentium
-            saepe ullam vel.
+            Although only vanilla JavaScript is allowed for building Chrome
+            extensions, after preparing a list of features I wanted the
+            extension to have, it wasn't long before I realized this was a job
+            better suited to React.
+            <br />
+            A lot of the UI Components were reusable, managing the state of the
+            app and keeping that state handy for when the user modified the app,
+            all these were features that made React a natural choice for me.
+            <br />
+            I decided to go with Redux for state management because props
+            drilling was becoming a serious issue. The state itself was quite
+            complex and I figured React's useContext hook may not cut it.
           </aside>
           <div class="flex tech-used">
-            <p class="skill-card bg-eggshell">TypeScript</p>
+            <p class="skill-card bg-eggshell">Webpack</p>
             <p class="skill-card bg-eggshell">React</p>
-            <p class="skill-card bg-eggshell">SASS</p>
+            <p class="skill-card bg-eggshell">Redux</p>
           </div>
         </div>
       </section>
-      <section class="bg-eggshell project-section-wrapper flex">
+      <section class="bg-eggshell project-section-wrapper flex flex-direction">
         <div class="flex gallery">
           <img src="./assets/restry/achievements-full.png" alt="" />
           <img src="./assets/restry/settings-full.png" alt="" />
@@ -99,15 +121,41 @@
         <img src="./assets/restry/achievements-mobile.png" alt="" />
         <img src="./assets/restry/achievements-cropped.png" alt="" />
       </section>
-      <footer class="flex justify-between project-section-wrapper">
+      <section class="project-section-wrapper text-center problems-section">
+        <h2>Problems and Improvements.</h2>
+        <p class="spaced-text">
+          This was my first experience with the "it works on my machine"
+          phenomenom. Due to the fact that the Chrome extension API was very
+          different from the native Browser API, I had a very convoluted
+          development process.
+        </p>
+        <p class="spaced-text">
+          I would work on a new feature and have no idea if my code worked, I'd
+          have to run the build step, reload the extension in the browser and
+          only then would my changes be reflected offering me a rather humbling
+          glimpse into life before hot-reloading. 😅
+        </p>
+        <p class="spaced-text">
+          I also faced some issues when working on the CRUD functionality.
+          Chrome offers a storage API similar to localStorage but manipulating
+          it wasn't exactly easy so I had to build custom hooks and utilities to
+          make the process a bit smoother. Now, I'm building a spaced-reptition
+          algorithm to aid the review process.
+        </p>
+      </section>
+      <footer class="bg-eggshell flex justify-between project-section-wrapper">
         <div>
           <span>Previous Project</span><br />
-          <a href="./restry.html" class="fs-600 text-deep-sapphire">Restry</a>
+          <a href="./restry.html" class="footer-project-link text-deep-sapphire"
+            >Restry</a
+          >
         </div>
         <div>
           <span>Next Project</span><br />
-          <a href="./betterupwork.html" class="fs-600 text-deep-sapphire"
-            >Better Upwork</a
+          <a
+            href="./mozilla.html"
+            class="footer-project-link text-deep-sapphire"
+            >Mozilla</a
           >
         </div>
       </footer>

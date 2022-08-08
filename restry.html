@@ -51,18 +51,29 @@
         </div>
       </header>
       <section class="project-section-wrapper">
+        <p class="text-column fs-400">
+          Restry is a project I decided to work on after I ran out of post-its
+          where I usually wrote my plan for the day. I also needed a timer to
+          break my work into chunks. This project helped improve my knowledge of
+          React Hooks and the component lifecycle as a whole. This also
+          highlighted the importance of test-driven development to me and I
+          couldn't be a better ambassador.
+        </p>
+      </section>
+      <section class="project-section-wrapper">
         <img src="./assets/restry/restry-desktop.png" alt="Project home page" />
       </section>
       <section
         class="bg-eggshell flex flex-direction justify-between project-section-wrapper"
       >
         <div>
-          <h2>The what?</h2>
+          <h2>Why did I build this</h2>
           <aside class="callout bg-oyster-pink">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            blanditiis harum consequatur deserunt ut ea est soluta earum alias
-            veniam sequi corporis atque aliquid repellendus tenetur praesentium
-            saepe ullam vel.
+            Apart from the fact that I needed an app to help with my
+            productivity, I also needed to solidify my React Knowledge. For
+            example, I didn't know the useEffect hook accepted a cleanup
+            function and while building the timer, I was tripped up by this very
+            fact.
           </aside>
         </div>
         <div class="callout-line"></div>
@@ -77,15 +88,23 @@
         <img
           src="./assets/restry/mobile-restry.png"
           alt="Homepage of Restry on Mobile"
+          width="375"
+          height="841"
         />
         <div class="callout-line"></div>
         <div>
-          <h2>The how?</h2>
+          <h2>Why I chose this tech stack</h2>
           <aside class="callout bg-eggshell">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
-            blanditiis harum consequatur deserunt ut ea est soluta earum alias
-            veniam sequi corporis atque aliquid repellendus tenetur praesentium
-            saepe ullam vel.
+            I started out using Vanilla JavaScript and React for this but as the
+            project grew in complexity, I had to port everything over to
+            TypeScript. One particular bug with the task items receiving the
+            wrong props without my knowledge helped clarify this decision.
+            <br />
+            I also chose Sass over vanilla CSS because I wanted to implement
+            aesthetic logic but didn't want to go overkill with JS.<br />
+            React was a no-brainer for me because I needed re-usable components
+            and had to do some state <em>jiu-jitsu</em> which would have been
+            unnecesarily complex with vanilla JS.
           </aside>
           <div class="flex tech-used">
             <p class="skill-card bg-eggshell">TypeScript</p>
@@ -102,7 +121,8 @@
         <img src="./assets/restry/achievements-mobile.png" alt="" />
         <img src="./assets/restry/achievements-cropped.png" alt="" />
       </section>
-      <footer class="flex justify-between project-section-wrapper">
+
+      <footer class="bg-eggshell flex justify-between project-section-wrapper">
         <div>
           <span>Previous Project</span><br />
           <a

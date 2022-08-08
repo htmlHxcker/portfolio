@@ -16,8 +16,9 @@ header {
 }
 
 .callout {
-  width: 20rem;
+  width: 25rem;
   padding: 2rem;
+  margin-top: 1rem;
 }
 
 .callout-line {
@@ -31,6 +32,12 @@ header {
 
 .gallery {
   flex-direction: column;
+}
+.problems-section {
+  margin: 4rem 0;
+}
+.spaced-text {
+  margin: 1.5rem 0;
 }
 .footer-project-link {
   font-size: var(--fs-500);

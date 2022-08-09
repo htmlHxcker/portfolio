@@ -56,11 +56,6 @@ module.exports = {
       chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
-      filename: 'bibliohut.html',
-      template: './bibliohut.html',
-      chunks: ['main'],
-    }),
-    new HtmlWebpackPlugin({
       filename: 'mozilla.html',
       template: './mozilla.html',
       chunks: ['main'],

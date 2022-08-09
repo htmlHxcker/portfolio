@@ -56,8 +56,8 @@ module.exports = {
       chunks: ['main'],
     }),
     new HtmlWebpackPlugin({
-      filename: 'betterupwork.html',
-      template: './betterupwork.html',
+      filename: 'mozilla.html',
+      template: './mozilla.html',
       chunks: ['main'],
     }),
     new CleanWebpackPlugin(),

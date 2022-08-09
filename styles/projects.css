@@ -14,15 +14,13 @@ header {
   align-items: center;
   padding: 2rem;
 }
-
-.callout {
-  width: 20rem;
-  padding: 2rem;
+.hero-img {
+  margin: auto;
 }
-
-.callout-line {
-  width: 80%;
-  border-bottom: solid 1px hsl(var(--clr-deep-sapphire));
+.callout {
+  width: 25rem;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
 .tech-used {
@@ -32,12 +30,26 @@ header {
 .gallery {
   flex-direction: column;
 }
+.problems-section {
+  margin: 4rem 0;
+}
+.spaced-text {
+  margin: 1.5rem 0;
+}
 .footer-project-link {
   font-size: var(--fs-500);
 }
+
 @media only screen and (min-width: 786px) {
   .footer-project-link {
     font-size: var(--fs-600);
+  }
+  .goals {
+    text-align: right;
+    padding: 10rem 10rem 10rem 20rem;
+  }
+  .lessons {
+    padding: 10rem 20rem 10rem 10rem;
   }
 }
 @media only screen and (max-width: 1096px) {

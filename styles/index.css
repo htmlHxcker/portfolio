@@ -1,80 +1,81 @@
 .logo-text {
-  display: block;
-  margin: 0.2rem;
-  margin-left: 2.4rem;
-  text-decoration: none;
+	display: block;
+	margin: 0.2rem;
+	margin-left: 2.4rem;
+	text-decoration: none;
 }
 
 .container {
-  position: absolute;
-  overflow-y: scroll;
+	position: absolute;
+	overflow-y: scroll;
 }
 .section-wrapper {
-  min-height: 100%;
-  padding: 2rem;
+	min-height: 100%;
+	padding: 2rem;
 }
 .section-title {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .right-container {
-  margin-top: 3rem;
+	margin-top: 3rem;
 }
 .accent-line {
-  border-bottom: 0.2rem solid hsl(var(--clr-deep-sapphire));
-  width: 7rem;
+	border-bottom: 0.2rem solid hsl(var(--clr-deep-sapphire));
+	width: 7rem;
 }
 
 .text-column {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 .project-card {
-  border: solid 1px hsl(var(--clr-deep-sapphire));
-  padding: 2rem;
+	max-width: 50%;
+	border: solid 1px hsl(var(--clr-deep-sapphire));
+	padding: 2rem;
 }
 
 .project-title {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 .project-row {
-  margin: 2rem 0;
+	margin: 2rem 0;
 }
 .project-summary {
-  margin-top: 1rem;
-  max-width: 50%;
+	margin-top: 1rem;
+	max-width: 50%;
 }
 .skill-card {
-  padding: 1rem;
-  text-align: center;
-  flex: 1 0 auto;
+	padding: 1rem;
+	text-align: center;
+	flex: 1 0 auto;
 }
 
 .contact-section {
-  width: 100%;
+	width: 100%;
 }
 
 /*todo responsiveness 780px breakpoint*/
 @media only screen and (min-width: 768px) {
-  .container {
-    inset: 2.4rem;
-  }
-  .right-container {
-    max-width: 50%;
-    margin-left: 3rem;
-    margin-top: 0;
-  }
-  .text-column {
-    column-count: 2;
-    margin-top: 2rem;
-  }
-  .skill-card {
-    padding: 2rem;
-  }
-  /* Custom scrollbars */
-  .container::-webkit-scrollbar {
-    width: 0.5em;
-  }
-  .container::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--clr-deep-sapphire));
-  }
+	.container {
+		inset: 2.4rem;
+	}
+	.right-container {
+		max-width: 50%;
+		margin-left: 3rem;
+		margin-top: 0;
+	}
+	.text-column {
+		column-count: 2;
+		margin-top: 2rem;
+	}
+	.skill-card {
+		padding: 2rem;
+	}
+	/* Custom scrollbars */
+	.container::-webkit-scrollbar {
+		width: 0.5em;
+	}
+	.container::-webkit-scrollbar-thumb {
+		background-color: hsl(var(--clr-deep-sapphire));
+	}
 }

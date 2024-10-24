@@ -65,6 +65,11 @@ module.exports = {
 			template: './site-palette.html',
 			chunks: ['main'],
 		}),
+		new HtmlWebpackPlugin({
+			filename: 'privacy.html',
+			template: './palette-extractor/privacy.html',
+			chunks: ['main'],
+		}),
 		new CleanWebpackPlugin(),
 	],
 };

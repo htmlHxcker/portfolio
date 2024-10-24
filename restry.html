@@ -1,162 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <script src="./js/index.js" defer></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/site.webmanifest" />
+		<script src="./js/index.js" defer></script>
 
-    <title>Restry — Clinton's Portfolio</title>
-  </head>
-  <body>
-    <a href="./" class="logo-text fs-500 text-deep-sapphire">CLINTON</a>
-    <main class="container bg-oyster-pink">
-      <header>
-        <div
-          class="flex center justify-between bg-eggshell project-overview flex-direction"
-        >
-          <h2>Restry</h2>
-          <nav>
-            <a
-              href="https://github.com/htmlHxcker/restry"
-              target="_blank"
-              class="fs-500 text-deep-sapphire"
-              >view code</a
-            >
-            <a
-              href="https://restry.netlify.com"
-              target="_blank"
-              class="fs-500 text-deep-sapphire"
-              >view live</a
-            >
-          </nav>
-        </div>
-      </header>
-      <section class="project-section-wrapper">
-        <p class="text-column fs-400">
-          Restry is a project I decided to work on after I ran out of post-its
-          to write my to-do list for the day, I also needed a timer to break my
-          work into chunks but couldn't find an app that offered these two
-          functionalities. This project helped improve my knowledge of React
-          Hooks and the component lifecycle as a whole. This also highlighted
-          the importance of test-driven development to me and I couldn't be a
-          better ambassador.
-        </p>
-      </section>
-      <section class="project-section-wrapper">
-        <img src="./assets/restry/restry.png" alt="Project home page" />
-      </section>
-      <section
-        class="bg-eggshell flex flex-direction justify-between project-section-wrapper"
-      >
-        <div>
-          <h2>Why did I build this</h2>
-          <aside class="callout bg-oyster-pink">
-            Apart from the fact that I needed an app to help with my
-            productivity, I also needed to solidify my React Knowledge. For
-            example, I didn't know the useEffect hook accepted a cleanup
-            function and while building the timer, I was tripped up by this very
-            fact.
-          </aside>
-        </div>
-        <img
-          src="./assets/restry/pomodoro-highlight.svg"
-          class="hero-img"
-          alt="Homepage of Restry"
-        />
-      </section>
-      <section
-        class="flex flex-direction justify-between project-section-wrapper"
-      >
-        <img
-          src="./assets/restry/mobile-restry.svg"
-          alt="Homepage of Restry on Mobile"
-        />
-        <div>
-          <h2>Why I chose this tech stack</h2>
-          <aside class="callout bg-eggshell">
-            I started out using Vanilla JavaScript and React for this but as the
-            project grew in complexity, I had to port everything over to
-            TypeScript. One particular bug with the task items receiving the
-            wrong props without my knowledge helped clarify this decision.
-            <br />
-            I also chose Sass over vanilla CSS because I wanted to implement
-            aesthetic logic but didn't want to go overkill with JS.<br />
-            React was a no-brainer for me because I needed re-usable components
-            and had to do some state <em>jiu-jitsu</em> which would have been
-            unnecesarily complex with vanilla JS.
-          </aside>
-          <div class="flex tech-used">
-            <p class="skill-card bg-eggshell">TypeScript</p>
-            <p class="skill-card bg-eggshell">React</p>
-            <p class="skill-card bg-eggshell">SASS</p>
-          </div>
-        </div>
-      </section>
-      <section
-        class="bg-eggshell project-section-wrapper flex justify-between flex-direction"
-      >
-        <img src="./assets/restry/pomdoro-mobile.svg" alt="" />
-        <img src="./assets/restry/restry-desktop.png" alt="" />
-      </section>
-      <section class="project-section-wrapper text-center problems-section">
-        <h2>Problems and Improvements.</h2>
-        <p class="spaced-text">
-          This app was undoubtedly the most ambitious challenge I've ever taken
-          on (excluding trying to build GTA on my own) and I ran into a number
-          of problems. One of the most notable ones was synchronising the timer
-          animation with the countdown.
-        </p>
-        <p class="spaced-text">
-          When I got the timer to work, the animation skipped steps. When I
-          squashed the animation bug, the timer would just jump through time
-          exponentially. It was a very weird game of <em>whack-a-mole</em> but
-          in the end I found the cause of the bug within my useEffect hook.
-        </p>
-        <p class="spaced-text">
-          I'm currently building some new features to improve the user
-          experience. I'm planning on sending the user a notification when the
-          timer runs out and also allowin them modify the duration of the timer.
-          Down the line, I hope to integrate gamification through unlockable
-          achievements to encourage the user's productivity habits.
-        </p>
-      </section>
-      <footer class="bg-eggshell flex justify-between project-section-wrapper">
-        <div>
-          <span>Previous Project</span><br />
-          <a
-            href="./mozilla.html"
-            class="footer-project-link text-deep-sapphire"
-            >Mozilla</a
-          >
-        </div>
-        <div>
-          <span>Next Project</span><br />
-          <a
-            href="./prepcards.html"
-            class="footer-project-link text-deep-sapphire"
-            >Prepcard</a
-          >
-        </div>
-      </footer>
-    </main>
-  </body>
+		<title>Restry — Clinton's Portfolio</title>
+	</head>
+	<body>
+		<a href="./" class="logo-text fs-500 text-deep-sapphire">CLINTON</a>
+		<main class="container bg-oyster-pink">
+			<header>
+				<div
+					class="flex center justify-between bg-eggshell project-overview flex-direction"
+				>
+					<h2>Restry</h2>
+					<nav>
+						<a
+							href="https://github.com/htmlHxcker/restry"
+							target="_blank"
+							class="fs-500 text-deep-sapphire"
+							>view code</a
+						>
+						<a
+							href="https://restry.netlify.app/"
+							target="_blank"
+							class="fs-500 text-deep-sapphire"
+							>view live</a
+						>
+					</nav>
+				</div>
+			</header>
+			<section class="project-section-wrapper">
+				<p class="text-column fs-400">
+					Restry is a project I decided to work on after I ran out of post-its
+					to write my to-do list for the day, I also needed a timer to break my
+					work into chunks but couldn't find an app that offered these two
+					functionalities. This project helped improve my knowledge of React
+					Hooks and the component lifecycle as a whole. This also highlighted
+					the importance of test-driven development to me and I couldn't be a
+					better ambassador.
+				</p>
+			</section>
+			<section class="project-section-wrapper">
+				<img src="./assets/restry/restry.png" alt="Project home page" />
+			</section>
+			<section
+				class="bg-eggshell flex flex-direction justify-between project-section-wrapper"
+			>
+				<div>
+					<h2>Why did I build this</h2>
+					<aside class="callout bg-oyster-pink">
+						Apart from the fact that I needed an app to help with my
+						productivity, I also needed to solidify my React Knowledge. For
+						example, I didn't know the useEffect hook accepted a cleanup
+						function and while building the timer, I was tripped up by this very
+						fact.
+					</aside>
+				</div>
+				<img
+					src="./assets/restry/pomodoro-highlight.svg"
+					class="hero-img"
+					alt="Homepage of Restry"
+				/>
+			</section>
+			<section
+				class="flex flex-direction justify-between project-section-wrapper"
+			>
+				<img
+					src="./assets/restry/mobile-restry.svg"
+					alt="Homepage of Restry on Mobile"
+				/>
+				<div>
+					<h2>Why I chose this tech stack</h2>
+					<aside class="callout bg-eggshell">
+						I started out using Vanilla JavaScript and React for this but as the
+						project grew in complexity, I had to port everything over to
+						TypeScript. One particular bug with the task items receiving the
+						wrong props without my knowledge helped clarify this decision.
+						<br />
+						I also chose Sass over vanilla CSS because I wanted to implement
+						aesthetic logic but didn't want to go overkill with JS.<br />
+						React was a no-brainer for me because I needed re-usable components
+						and had to do some state <em>jiu-jitsu</em> which would have been
+						unnecesarily complex with vanilla JS.
+					</aside>
+					<div class="flex tech-used">
+						<p class="skill-card bg-eggshell">TypeScript</p>
+						<p class="skill-card bg-eggshell">React</p>
+						<p class="skill-card bg-eggshell">SASS</p>
+					</div>
+				</div>
+			</section>
+			<section
+				class="bg-eggshell project-section-wrapper flex justify-between flex-direction"
+			>
+				<img src="./assets/restry/pomdoro-mobile.svg" alt="" />
+				<img src="./assets/restry/restry-desktop.png" alt="" />
+			</section>
+			<section class="project-section-wrapper text-center problems-section">
+				<h2>Problems and Improvements.</h2>
+				<p class="spaced-text">
+					This app was undoubtedly the most ambitious challenge I've ever taken
+					on (excluding trying to build GTA on my own) and I ran into a number
+					of problems. One of the most notable ones was synchronising the timer
+					animation with the countdown.
+				</p>
+				<p class="spaced-text">
+					When I got the timer to work, the animation skipped steps. When I
+					squashed the animation bug, the timer would just jump through time
+					exponentially. It was a very weird game of <em>whack-a-mole</em> but
+					in the end I found the cause of the bug within my useEffect hook.
+				</p>
+				<p class="spaced-text">
+					I'm currently building some new features to improve the user
+					experience. I'm planning on sending the user a notification when the
+					timer runs out and also allowin them modify the duration of the timer.
+					Down the line, I hope to integrate gamification through unlockable
+					achievements to encourage the user's productivity habits.
+				</p>
+			</section>
+			<footer class="bg-eggshell flex justify-between project-section-wrapper">
+				<div>
+					<span>Previous Project</span><br />
+					<a
+						href="./mozilla.html"
+						class="footer-project-link text-deep-sapphire"
+						>Mozilla</a
+					>
+				</div>
+				<div>
+					<span>Next Project</span><br />
+					<a
+						href="./prepcards.html"
+						class="footer-project-link text-deep-sapphire"
+						>Prepcard</a
+					>
+				</div>
+			</footer>
+		</main>
+	</body>
 </html>
